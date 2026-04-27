@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for a mobile app published on Google Play.">
+    <style>
+        :root {
+            --bg: #f6f1e8;
+            --panel: rgba(255, 252, 247, 0.92);
+            --panel-border: rgba(47, 42, 35, 0.12);
+            --text: #2f2a23;
+            --muted: #6b6257;
+            --accent: #a44a3f;
+            --accent-soft: rgba(164, 74, 63, 0.1);
+            --shadow: 0 24px 60px rgba(51, 40, 30, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(164, 74, 63, 0.14), transparent 32%),
+                radial-gradient(circle at top right, rgba(93, 117, 98, 0.14), transparent 24%),
+                linear-gradient(180deg, #fbf7f1 0%, var(--bg) 100%);
+            line-height: 1.7;
+        }
+
+        .shell {
+            width: min(920px, calc(100% - 32px));
+            margin: 48px auto;
+        }
+
+        .hero,
+        .policy {
+            background: var(--panel);
+            border: 1px solid var(--panel-border);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero {
+            padding: 40px 32px 28px;
+            border-radius: 28px 28px 18px 18px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            line-height: 1.15;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            max-width: 10ch;
+        }
+
+        .hero p {
+            margin: 18px 0 0;
+            max-width: 62ch;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 14px;
+            margin-top: 26px;
+        }
+
+        .meta-card {
+            padding: 16px 18px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(47, 42, 35, 0.08);
+        }
+
+        .meta-card strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
+
+        .policy {
+            margin-top: 12px;
+            padding: 30px 32px 36px;
+            border-radius: 18px 18px 28px 28px;
+        }
+
+        .notice {
+            margin: 0 0 28px;
+            padding: 16px 18px;
+            border-left: 4px solid var(--accent);
+            border-radius: 14px;
+            background: rgba(164, 74, 63, 0.07);
+            color: var(--text);
+        }
+
+        section + section {
+            margin-top: 28px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(47, 42, 35, 0.08);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        p,
+        li {
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 12px 0 0;
+            padding-left: 22px;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 0.94rem;
+        }
+
+        @media (max-width: 640px) {
+            .shell {
+                width: min(100% - 20px, 920px);
+                margin: 20px auto;
+            }
+
+            .hero,
+            .policy {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .hero {
+                padding-top: 28px;
+            }
+
+            .policy {
+                padding-bottom: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="shell">
+        <header class="hero">
+            <span class="eyebrow">Google Play Privacy Policy</span>
+            <h1>Privacy Policy for <span data-policy="appName">Shopping List</span></h1>
+            <p>
+                This page explains how <span data-policy="developerName">Your Company Name</span>
+                handles information when you use <span data-policy="appName">Shopping List</span>.
+            </p>
+            <div class="meta">
+                <div class="meta-card">
+                    <strong>Effective Date</strong>
+                    <span data-policy="effectiveDate">April 7, 2026</span>
+                </div>
+                <div class="meta-card">
+                    <strong>Developer</strong>
+                    <span data-policy="developerName">Your Company Name</span>
+                </div>
+                <div class="meta-card">
+                    <strong>Contact</strong>
+                    <a data-policy="contactEmailLink" href="mailto:support@example.com">support@example.com</a>
+                </div>
+            </div>
+        </header>
+
+        <article class="policy">
+            <section>
+                <h2>1. Information We Collect</h2>
+                <p>
+                    <span data-policy="appName">Shopping List</span> does not collect personal data or usage data from users.
+                </p>
+                <p>
+                    <strong>No data collection declared:</strong>
+                    <span data-policy="dataCollectionStatement">Shopping List does not collect, store, or transmit personal information, analytics, account details, location data, or device identifiers.</span>
+                </p>
+            </section>
+
+            <section>
+                <h2>2. How We Use Information</h2>
+                <p>
+                    Because <span data-policy="appName">Shopping List</span> does not collect user data, there is no personal information used for analytics,
+                    advertising, profiling, or account management.
+                </p>
+            </section>
+
+            <section>
+                <h2>3. Third-Party Services</h2>
+                <p>
+                    <span data-policy="appName">Shopping List</span> does not use third-party analytics, advertising, or tracking SDKs to collect user data.
+                </p>
+            </section>
+
+            <section>
+                <h2>4. Data Sharing</h2>
+                <p>
+                    <strong>No data shared with third parties:</strong>
+                    <span data-policy="appName">Shopping List</span> does not share personal data with third parties because it does not collect such data.
+                </p>
+            </section>
+
+            <section>
+                <h2>5. Data Retention</h2>
+                <p>
+                    We retain information only for as long as needed to provide the app, resolve disputes, enforce agreements,
+                    and satisfy legal obligations. Diagnostic and analytics data may be retained for a limited period for service improvement.
+                </p>
+            </section>
+
+            <section>
+                <h2>6. Children&apos;s Privacy</h2>
+                <p>
+                    <span data-policy="appName">Shopping List</span> is suitable for users of all age groups, including children.
+                    The app does not collect, store, or share personal information from any users, including children.
+                    If you have any questions about this section, you may contact us using the details provided below.
+                </p>
+            </section>
+
+            <section>
+                <h2>7. Your Rights and Choices</h2>
+                <p>
+                    Depending on your location, you may have rights to access, correct, delete, or restrict the use of your information.
+                    You may also be able to control some data collection through your device settings, app permissions, or by uninstalling the app.
+                </p>
+            </section>
+
+            <section>
+                <h2>8. Changes to This Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time. When we do, we will revise the effective date on this page.
+                    Continued use of the app after an update means the revised policy applies to your use of the app.
+                </p>
+            </section>
+
+            <section>
+                <h2>9. Contact Us</h2>
+                <p>
+                    If you have questions about this Privacy Policy or your data, contact
+                    <span data-policy="developerName">Your Company Name</span> at
+                    <a data-policy="contactEmailLink" href="mailto:support@example.com">support@example.com</a>.
+                </p>
+            </section>
+            
+        </article>
+    </main>
+
+    <script>
+        const policy = {
+            appName: "Shopping List",
+            developerName: "Codevity Apps",
+            contactEmail: "ajaybcodes@gmail.com",
+            websiteUrl: "",
+            effectiveDate: "April 7, 2026",
+            childrenAge: "13",
+            dataCollectionStatement: "Shopping List does not collect, store, or transmit personal information, analytics, account details, location data, or device identifiers."
+        };
+
+        document.title = `Privacy Policy | ${policy.appName}`;
+
+        for (const element of document.querySelectorAll("[data-policy='appName']")) {
+            element.textContent = policy.appName;
+        }
+
+        for (const element of document.querySelectorAll("[data-policy='developerName']")) {
+            element.textContent = policy.developerName;
+        }
+
+        for (const element of document.querySelectorAll("[data-policy='effectiveDate']")) {
+            element.textContent = policy.effectiveDate;
+        }
+
+        for (const element of document.querySelectorAll("[data-policy='childrenAge']")) {
+            element.textContent = policy.childrenAge;
+        }
+
+        for (const element of document.querySelectorAll("[data-policy='dataCollectionStatement']")) {
+            element.textContent = policy.dataCollectionStatement;
+        }
+
+        for (const element of document.querySelectorAll("[data-policy='contactEmailLink']")) {
+            element.textContent = policy.contactEmail;
+            element.href = `mailto:${policy.contactEmail}`;
+        }
+
+        for (const element of document.querySelectorAll("[data-policy='websiteLink']")) {
+            element.textContent = policy.websiteUrl;
+            element.href = policy.websiteUrl;
+        }
+    </script>
+</body>
+</html>
