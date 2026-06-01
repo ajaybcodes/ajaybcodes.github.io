@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | PDF Reader – Fast PDF Viewer & Search</title>
+    <meta name="description" content="Privacy Policy for PDF Reader – Fast PDF Viewer & Search on Google Play.">
+    <meta name="theme-color" content="#1f8a84">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f6f2e9;
+            --surface: rgba(255, 253, 248, 0.9);
+            --surface-strong: rgba(255, 255, 255, 0.96);
+            --border: rgba(35, 47, 62, 0.13);
+            --text: #1c2433;
+            --muted: #4e5a6b;
+            --accent: #d7643f;
+            --accent-alt: #1f8a84;
+            --accent-soft: rgba(31, 138, 132, 0.12);
+            --shadow-lg: 0 26px 74px rgba(23, 34, 49, 0.18);
+            --shadow-sm: 0 14px 30px rgba(23, 34, 49, 0.1);
+            --radius-xl: 30px;
+            --radius-lg: 20px;
+            --radius-md: 14px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Sora", "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 6% 0%, rgba(31, 138, 132, 0.22), transparent 24%),
+                radial-gradient(circle at 95% 6%, rgba(215, 100, 63, 0.2), transparent 30%),
+                linear-gradient(180deg, #fef9f1 0%, var(--bg) 100%);
+            padding: 14px;
+        }
+
+        .page-shell {
+            width: min(1140px, 100%);
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .topbar {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            background: var(--surface);
+            backdrop-filter: blur(14px);
+            box-shadow: var(--shadow-sm);
+            padding: 14px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            animation: rise 620ms ease both;
+        }
+
+        .brand {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+
+        .home-link {
+            text-decoration: none;
+            color: #146560;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+        }
+
+        .hero {
+            margin-top: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(249, 244, 235, 0.84));
+            box-shadow: var(--shadow-lg);
+            padding: clamp(22px, 4vw, 40px);
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+            gap: 20px;
+            animation: rise 720ms ease both;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            padding: 7px 12px;
+            border-radius: 999px;
+            font-size: 0.73rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: rgba(31, 138, 132, 0.12);
+            color: #146560;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            line-height: 1.15;
+        }
+
+        h1 {
+            margin-top: 14px;
+            font-family: "Newsreader", Georgia, serif;
+            font-size: clamp(2rem, 4.6vw, 3.3rem);
+            letter-spacing: -0.02em;
+            max-width: 14ch;
+        }
+
+        .hero p {
+            margin: 12px 0 0;
+            color: var(--muted);
+            line-height: 1.72;
+            max-width: 58ch;
+        }
+
+        .meta-grid {
+            display: grid;
+            gap: 10px;
+            align-content: start;
+        }
+
+        .meta-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            background: var(--surface-strong);
+            padding: 12px 14px;
+        }
+
+        .meta-card span {
+            display: block;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+
+        .meta-card strong,
+        .meta-card a {
+            color: var(--text);
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .layout {
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 14px;
+            align-items: start;
+        }
+
+        .toc {
+            position: sticky;
+            top: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            background: var(--surface);
+            box-shadow: var(--shadow-sm);
+            padding: 16px;
+        }
+
+        .toc h2 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            font-family: "Sora", "Segoe UI", sans-serif;
+        }
+
+        .toc a {
+            display: block;
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.86rem;
+            line-height: 1.4;
+            padding: 7px 8px;
+            border-radius: 8px;
+            transition: 180ms ease;
+        }
+
+        .toc a:hover,
+        .toc a:focus-visible {
+            color: var(--text);
+            background: rgba(31, 138, 132, 0.12);
+            outline: none;
+        }
+
+        .article {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            background: var(--surface);
+            box-shadow: var(--shadow-sm);
+            padding: clamp(20px, 3.6vw, 32px);
+        }
+
+        .policy-section + .policy-section {
+            margin-top: 12px;
+        }
+
+        .policy-section {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            background: var(--surface-strong);
+            padding: 16px;
+            scroll-margin-top: 20px;
+        }
+
+        .policy-section h2 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .policy-section p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.72;
+            font-size: 0.95rem;
+        }
+
+        .policy-section p + p {
+            margin-top: 10px;
+        }
+
+        .policy-section a {
+            color: #146560;
+            font-weight: 600;
+        }
+
+        .footer-note {
+            margin-top: 14px;
+            color: var(--muted);
+            font-size: 0.82rem;
+            text-align: center;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 960px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc {
+                position: static;
+            }
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 10px;
+            }
+
+            .topbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .home-link {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero,
+            .article {
+                border-radius: 22px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="./index.html">Codevity Apps</a>
+            <a class="home-link" href="./index.html">Back to home</a>
+        </header>
+
+        <section class="hero">
+            <div>
+                <span class="eyebrow">Google Play Privacy Policy</span>
+                <h1>PDF Reader Privacy Policy</h1>
+                <p>
+                    This policy describes how Codevity Apps handles information when you use
+                    PDF Reader – Fast PDF Viewer &amp; Search.
+                </p>
+            </div>
+            <div class="meta-grid" aria-label="Policy metadata">
+                <article class="meta-card">
+                    <span>Effective Date</span>
+                    <strong>June 1, 2026</strong>
+                </article>
+                <article class="meta-card">
+                    <span>Developer</span>
+                    <strong>Codevity Apps</strong>
+                </article>
+                <article class="meta-card">
+                    <span>Contact</span>
+                    <a href="mailto:ajaybcodes@gmail.com">ajaybcodes@gmail.com</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="layout">
+            <aside class="toc" aria-label="Page sections">
+                <h2>On this page</h2>
+                <a href="#information">1. Information We Collect</a>
+                <a href="#usage">2. How We Use Information</a>
+                <a href="#permissions">3. Permissions</a>
+                <a href="#third-party">4. Third-Party Services</a>
+                <a href="#sharing">5. Data Sharing</a>
+                <a href="#retention">6. Data Retention</a>
+                <a href="#children">7. Children Privacy</a>
+                <a href="#rights">8. Your Rights and Choices</a>
+                <a href="#changes">9. Changes to This Policy</a>
+                <a href="#contact">10. Contact Us</a>
+            </aside>
+
+            <article class="article">
+                <section class="policy-section" id="information">
+                    <h2>1. Information We Collect</h2>
+                    <p>
+                        PDF Reader – Fast PDF Viewer &amp; Search does not collect personal data or usage analytics on developer-controlled servers.
+                    </p>
+                    <p>
+                        <strong>No personal data collection declared:</strong>
+                        PDF Reader does not collect, store, or transmit personal information, account details, analytics identifiers, or location data to the developer. All PDF files you open are accessed locally on your device and are never uploaded or shared.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="usage">
+                    <h2>2. How We Use Information</h2>
+                    <p>
+                        PDF Reader accesses your files solely to render and display PDF documents within the app. Your recently opened file list is stored locally on your device to provide the recent files feature. No file content or file paths are transmitted to the developer or any third party.
+                    </p>
+                    <p>
+                        We do not use any information for advertising, profiling, or analytics purposes.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="permissions">
+                    <h2>3. Permissions</h2>
+                    <p>
+                        PDF Reader requests only the permissions necessary to open and display PDF files on your device:
+                    </p>
+                    <p>
+                        <strong>Storage / Files access</strong> — Required to open PDF files from your device storage, file manager, email, cloud storage apps (such as Google Drive or Dropbox), or any app that shares PDF files. This permission is used exclusively to read PDF documents at your direction and is never used to scan, upload, or index your files.
+                    </p>
+                    <p>
+                        All permissions can be reviewed or revoked at any time from your device's app settings.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="third-party">
+                    <h2>4. Third-Party Services</h2>
+                    <p>
+                        PDF Reader does not include third-party advertising SDKs, analytics SDKs, or tracking libraries. The app operates fully offline and requires no internet connection to function.
+                    </p>
+                    <p>
+                        Platform providers such as Google Play may process data under their own privacy policies when you download or update the app. PDF Reader itself does not initiate any network requests.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="sharing">
+                    <h2>5. Data Sharing</h2>
+                    <p>
+                        We do not sell, share, or disclose personal data to third parties because we do not collect personal data on our servers. Your PDF documents and reading history remain entirely on your device and under your control.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="retention">
+                    <h2>6. Data Retention</h2>
+                    <p>
+                        PDF Reader stores only your recent files list locally on your device. This data is retained until you remove individual entries from the list or uninstall the app. No data is retained on developer-controlled servers because none is collected.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="children">
+                    <h2>7. Children Privacy</h2>
+                    <p>
+                        PDF Reader is a general-purpose document viewer and is not directed at children under the age of 13. We do not knowingly collect personal information from children. Because no personal data is collected by the app, there is no specific risk to child privacy beyond normal device use.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="rights">
+                    <h2>8. Your Rights and Choices</h2>
+                    <p>
+                        Because PDF Reader does not collect personal data on developer servers, there is no account to delete or data profile to request. You can manage all locally stored data (such as the recent files list) directly within the app or by uninstalling it.
+                    </p>
+                    <p>
+                        Storage permissions can be revoked at any time from your device settings, which will prevent the app from opening new PDF files.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="changes">
+                    <h2>9. Changes to This Policy</h2>
+                    <p>
+                        We may update this Privacy Policy if the app's functionality changes in a way that affects data handling. Any changes will be reflected on this page with a revised effective date. We encourage you to review this policy periodically.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="contact">
+                    <h2>10. Contact Us</h2>
+                    <p>
+                        If you have any questions or concerns about this Privacy Policy or the PDF Reader app, please contact us at:
+                    </p>
+                    <p>
+                        <strong>Codevity Apps</strong><br>
+                        Email: <a href="mailto:ajaybcodes@gmail.com">ajaybcodes@gmail.com</a>
+                    </p>
+                </section>
+            </article>
+        </section>
+
+        <p class="footer-note">
+            &copy; 2024&ndash;2026 Codevity Apps. All rights reserved.
+        </p>
+    </main>
+</body>
+</html>
