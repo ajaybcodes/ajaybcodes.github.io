@@ -3,52 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy – Tables 1-20: Listen & Speak</title>
+    <title>Privacy Policy | Tables 1-20: Listen & Speak</title>
+    <meta name="description" content="Privacy Policy for Tables 1-20: Listen & Speak on Google Play.">
+    <meta name="theme-color" content="#0f766e">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; color: #222; }
-        h1, h2 { color: #2a5d9f; }
-        ul { margin-left: 1.5em; }
-        .section { margin-bottom: 2em; }
+        :root {
+            --bg: #eef2f8;
+            --surface: rgba(255, 255, 255, 0.88);
+            --surface-strong: rgba(255, 255, 255, 0.96);
+            --border: rgba(12, 22, 35, 0.1);
+            --text: #0e1726;
+            --muted: #4f5f75;
+            --accent-alt: #0f766e;
+            --accent-soft: rgba(15, 118, 110, 0.14);
+            --shadow-lg: 0 28px 80px rgba(9, 22, 38, 0.17);
+            --shadow-sm: 0 14px 34px rgba(9, 22, 38, 0.1);
+            --radius-xl: 30px;
+            --radius-lg: 22px;
+            --radius-md: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Sora", "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 7% -2%, rgba(15, 118, 110, 0.2), transparent 34%),
+                radial-gradient(circle at 98% 8%, rgba(224, 122, 79, 0.17), transparent 34%),
+                linear-gradient(180deg, #f8fbff 0%, #edf2f8 100%);
+            padding: 14px;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(14, 23, 38, 0.016) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(14, 23, 38, 0.016) 1px, transparent 1px);
+            background-size: 48px 48px;
+            mask-image: radial-gradient(circle at center, black 28%, transparent 92%);
+            z-index: 0;
+        }
+
+        .page-shell {
+            width: min(1140px, 100%);
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .topbar {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            background: var(--surface);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            box-shadow: var(--shadow-sm);
+            padding: 14px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            position: sticky;
+            top: 10px;
+            z-index: 3;
+        }
+
+        .brand {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+
+        .home-link {
+            text-decoration: none;
+            color: #0f766e;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+        }
+
+        .hero {
+            margin-top: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(246, 250, 255, 0.85));
+            box-shadow: var(--shadow-lg);
+            padding: clamp(22px, 4vw, 40px);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            padding: 7px 12px;
+            border-radius: 999px;
+            font-size: 0.73rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: rgba(15, 118, 110, 0.12);
+            color: #0f766e;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            line-height: 1.15;
+        }
+
+        h1 {
+            margin-top: 14px;
+            font-family: "Newsreader", Georgia, serif;
+            font-size: clamp(2rem, 4.6vw, 3.2rem);
+            letter-spacing: -0.02em;
+            max-width: 16ch;
+        }
+
+        .hero p {
+            margin: 12px 0 0;
+            color: var(--muted);
+            line-height: 1.72;
+            max-width: 68ch;
+        }
+
+        .article {
+            margin-top: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            background: var(--surface);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            box-shadow: var(--shadow-sm);
+            padding: clamp(20px, 3.6vw, 32px);
+        }
+
+        .section + .section {
+            margin-top: 12px;
+        }
+
+        .section {
+            border: 1px solid rgba(12, 22, 35, 0.08);
+            border-radius: var(--radius-md);
+            background: var(--surface-strong);
+            box-shadow: 0 10px 24px rgba(10, 23, 40, 0.06);
+            padding: 16px;
+        }
+
+        .section h2 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .section p,
+        .section li {
+            color: var(--muted);
+            line-height: 1.72;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        a {
+            color: #0f766e;
+            font-weight: 600;
+        }
+
+        a:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.22);
+            border-radius: 8px;
+        }
+
+        .footer-note {
+            margin-top: 14px;
+            color: var(--muted);
+            font-size: 0.82rem;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .topbar {
+                position: static;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <div class="section">
-        <p><strong>Tables 1-20: Listen & Speak</strong> is committed to protecting your privacy. This policy explains how we handle your information when you use our app.</p>
-    </div>
-    <div class="section">
-        <h2>Information We Collect</h2>
-        <ul>
-            <li><strong>No Personal Data Collected:</strong> We do not collect, store, or share any personal information such as your name, email, or contact details.</li>
-            <li><strong>Voice Recognition:</strong> The app uses your device’s microphone for voice recognition features. Voice data is processed locally on your device and is not stored or transmitted to our servers.</li>
-            <li><strong>Usage Data:</strong> We may collect anonymous, non-personal usage statistics (such as feature usage and crash reports) to improve app performance and user experience. This data does not identify you.</li>
-        </ul>
-    </div>
-    <div class="section">
-        <h2>How We Use Information</h2>
-        <ul>
-            <li>To provide and improve app features, such as listening, speaking, and practice modes.</li>
-            <li>To analyze app performance and fix issues.</li>
-        </ul>
-    </div>
-    <div class="section">
-        <h2>Children’s Privacy</h2>
-        <p>This app is designed for children and does not collect personal information. Parents can use the app with confidence that their child’s privacy is protected.</p>
-    </div>
-    <div class="section">
-        <h2>Third-Party Services</h2>
-        <p>We do not use third-party analytics or advertising services that collect personal data. If any third-party services are added in the future, this policy will be updated accordingly.</p>
-    </div>
-    <div class="section">
-        <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. Any changes will be posted on this page with a revised date.</p>
-    </div>
-    <div class="section">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or concerns about this privacy policy, please contact us at: <a href="mailto:ajaybcodes@gmail.com">ajaybcodes@gmail.com</a></p>
-    </div>
-    <div class="section">
-        <p><em>Last updated: May 18, 2026</em></p>
-    </div>
+    <main class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="./index.html">Codevity Apps</a>
+            <a class="home-link" href="./index.html">Back to home</a>
+        </header>
+
+        <section class="hero">
+            <span class="eyebrow">Google Play Privacy Policy</span>
+            <h1>Tables 1-20: Listen &amp; Speak Privacy Policy</h1>
+            <p>
+                This policy describes how Codevity Apps handles information when you use Tables 1-20: Listen &amp; Speak.
+                The app is designed for children and learning-focused use.
+            </p>
+        </section>
+
+        <section class="article">
+            <div class="section">
+                <h2>Information We Collect</h2>
+                <ul>
+                    <li><strong>No personal data collected:</strong> We do not collect, store, or share personal information such as your name, email address, or contact details.</li>
+                    <li><strong>Voice recognition:</strong> The app may use your device microphone for learning features. Voice data is processed locally on the device and is not stored or transmitted to developer servers.</li>
+                    <li><strong>Usage data:</strong> We may receive anonymous non-personal usage information (for example, crash diagnostics) through platform-level systems to improve stability.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>How We Use Information</h2>
+                <ul>
+                    <li>To provide and improve app features such as listening, speaking, and practice modes.</li>
+                    <li>To analyze app performance and resolve technical issues.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Children Privacy</h2>
+                <p>
+                    This app is designed for children and does not collect personal information.
+                    Parents and guardians can use the app with confidence that child privacy is respected.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Third-Party Services</h2>
+                <p>
+                    We do not include third-party advertising or tracking SDKs for developer-side personal data collection.
+                    Distribution platforms such as Google Play may process technical data under their own privacy policies.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Changes to This Policy</h2>
+                <p>
+                    We may update this policy from time to time. Any changes will be published on this page with a revised effective date.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Contact Us</h2>
+                <p>
+                    If you have any questions about this policy, contact Codevity Apps at
+                    <a href="mailto:ajaybcodes@gmail.com">ajaybcodes@gmail.com</a>.
+                </p>
+            </div>
+
+            <p class="footer-note">Last updated: May 18, 2026</p>
+        </section>
+    </main>
 </body>
 </html>

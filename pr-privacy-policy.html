@@ -299,6 +299,74 @@
             }
         }
 
+        /* Visual refresh for a cleaner, more professional look */
+        :root {
+            --bg: #eef2f8;
+            --surface: rgba(255, 255, 255, 0.86);
+            --surface-strong: rgba(255, 255, 255, 0.96);
+            --border: rgba(12, 22, 35, 0.1);
+            --text: #0e1726;
+            --muted: #4f5f75;
+            --accent: #e07a4f;
+            --accent-alt: #0f766e;
+            --accent-soft: rgba(15, 118, 110, 0.14);
+            --shadow-lg: 0 28px 80px rgba(9, 22, 38, 0.17);
+            --shadow-sm: 0 14px 34px rgba(9, 22, 38, 0.1);
+            --radius-xl: 32px;
+            --radius-lg: 22px;
+            --radius-md: 16px;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 7% -2%, rgba(15, 118, 110, 0.2), transparent 34%),
+                radial-gradient(circle at 98% 8%, rgba(224, 122, 79, 0.17), transparent 34%),
+                linear-gradient(180deg, #f8fbff 0%, #edf2f8 100%);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(14, 23, 38, 0.016) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(14, 23, 38, 0.016) 1px, transparent 1px);
+            background-size: 48px 48px;
+            mask-image: radial-gradient(circle at center, black 28%, transparent 92%);
+            z-index: 0;
+        }
+
+        .page-shell {
+            position: relative;
+            z-index: 1;
+        }
+
+        .topbar,
+        .hero,
+        .toc,
+        .article {
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .topbar {
+            position: sticky;
+            top: 10px;
+            z-index: 3;
+        }
+
+        .policy-section {
+            border-color: rgba(12, 22, 35, 0.08);
+            box-shadow: 0 10px 24px rgba(10, 23, 40, 0.06);
+        }
+
+        a:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.22);
+            border-radius: 8px;
+        }
+
         @media (prefers-reduced-motion: reduce) {
             *,
             *::before,

@@ -343,6 +343,39 @@
             background: rgba(215, 100, 63, 0.12);
         }
 
+        .app-actions {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .action-link {
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 8px 12px;
+            transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+        }
+
+        .action-link.store {
+            background: var(--accent-alt);
+            color: #f4fffe;
+            box-shadow: 0 9px 20px rgba(31, 138, 132, 0.2);
+        }
+
+        .action-link.policy {
+            background: rgba(215, 100, 63, 0.14);
+            color: #7f331d;
+        }
+
+        .action-link:hover,
+        .action-link:focus-visible {
+            transform: translateY(-2px);
+            outline: none;
+        }
+
         .link-card {
             text-decoration: none;
             color: inherit;
@@ -433,6 +466,73 @@
             }
         }
 
+        /* Visual refresh for a cleaner, more professional look */
+        :root {
+            --bg: #eef2f8;
+            --surface: rgba(255, 255, 255, 0.84);
+            --surface-strong: rgba(255, 255, 255, 0.96);
+            --border: rgba(12, 22, 35, 0.1);
+            --text: #0e1726;
+            --muted: #4f5f75;
+            --accent: #e07a4f;
+            --accent-alt: #0f766e;
+            --accent-soft: rgba(224, 122, 79, 0.14);
+            --shadow-lg: 0 28px 80px rgba(9, 22, 38, 0.18);
+            --shadow-sm: 0 14px 34px rgba(9, 22, 38, 0.1);
+            --radius-xl: 32px;
+            --radius-lg: 22px;
+            --radius-md: 16px;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 6% -4%, rgba(15, 118, 110, 0.2), transparent 34%),
+                radial-gradient(circle at 98% 8%, rgba(224, 122, 79, 0.18), transparent 34%),
+                linear-gradient(180deg, #f8fbff 0%, #edf2f8 45%, #e8eef5 100%);
+        }
+
+        body::before {
+            background-image:
+                linear-gradient(rgba(14, 23, 38, 0.018) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(14, 23, 38, 0.018) 1px, transparent 1px);
+            background-size: 46px 46px;
+        }
+
+        .topbar {
+            position: sticky;
+            top: 10px;
+        }
+
+        .hero,
+        .panel,
+        .topbar,
+        .footer {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .app-card,
+        .link-card,
+        .metric {
+            border-color: rgba(12, 22, 35, 0.08);
+            box-shadow: 0 12px 28px rgba(10, 23, 40, 0.07);
+        }
+
+        .action-link,
+        .button,
+        .top-links a,
+        .footer a {
+            letter-spacing: 0.01em;
+        }
+
+        .action-link:focus-visible,
+        .button:focus-visible,
+        .top-links a:focus-visible,
+        .link-card:focus-visible,
+        .footer a:focus-visible {
+            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.22);
+        }
+
         @media (prefers-reduced-motion: reduce) {
             *,
             *::before,
@@ -503,6 +603,10 @@
                         <span class="chip">Android</span>
                         <span class="chip">On-device first</span>
                     </div>
+                    <div class="app-actions">
+                        <a class="action-link store" href="https://play.google.com/store/search?q=PhoneMate%20Codevity%20Apps&c=apps" target="_blank" rel="noopener noreferrer">Play Store</a>
+                        <a class="action-link policy" href="./pm-privacy-policy.html">Privacy Policy</a>
+                    </div>
                 </article>
 
                 <article class="app-card">
@@ -512,6 +616,10 @@
                     <div class="chip-row">
                         <span class="chip">Simple UX</span>
                         <span class="chip">Fast input</span>
+                    </div>
+                    <div class="app-actions">
+                        <a class="action-link store" href="https://play.google.com/store/search?q=Shopping%20List%20Codevity%20Apps&c=apps" target="_blank" rel="noopener noreferrer">Play Store</a>
+                        <a class="action-link policy" href="./sl-privacy-policy.html">Privacy Policy</a>
                     </div>
                 </article>
 
@@ -523,6 +631,10 @@
                         <span class="chip">Accurate</span>
                         <span class="chip">Everyday use</span>
                     </div>
+                    <div class="app-actions">
+                        <a class="action-link store" href="https://play.google.com/store/search?q=Unit%20Converter%20Codevity%20Apps&c=apps" target="_blank" rel="noopener noreferrer">Play Store</a>
+                        <a class="action-link policy" href="./uv-privacy-policy.html">Privacy Policy</a>
+                    </div>
                 </article>
 
                 <article class="app-card">
@@ -533,6 +645,10 @@
                         <span class="chip">Kid-friendly</span>
                         <span class="chip">Offline</span>
                     </div>
+                    <div class="app-actions">
+                        <a class="action-link store" href="https://play.google.com/store/search?q=First%20Words%20Baby%20Toddler%20Codevity%20Apps&c=apps" target="_blank" rel="noopener noreferrer">Play Store</a>
+                        <a class="action-link policy" href="./fw-privacy-policy.html">Privacy Policy</a>
+                    </div>
                 </article>
                 <article class="app-card">
                     <span class="app-label">Productivity</span>
@@ -541,6 +657,10 @@
                     <div class="chip-row">
                         <span class="chip">Fast &amp; Lightweight</span>
                         <span class="chip">Offline</span>
+                    </div>
+                    <div class="app-actions">
+                        <a class="action-link store" href="https://play.google.com/store/search?q=PDF%20Reader%20Fast%20PDF%20Viewer%20Search%20Codevity%20Apps&c=apps" target="_blank" rel="noopener noreferrer">Play Store</a>
+                        <a class="action-link policy" href="./pr-privacy-policy.html">Privacy Policy</a>
                     </div>
                 </article>            </div>
         </section>
