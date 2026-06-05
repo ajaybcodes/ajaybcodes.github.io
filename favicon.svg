@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Codevity Apps icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#115e59"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)"/>
+  <path d="M24 21c-6 0-11 5-11 11s5 11 11 11h8v-6h-8c-3 0-5-2-5-5s2-5 5-5h8v-6h-8z" fill="#ffffff"/>
+  <path d="M39 21h7l-7 22h-7l7-22z" fill="#f6f2e9"/>
+</svg>
