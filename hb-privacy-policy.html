@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Habitly: Habit Tracker</title>
+    <meta name="description" content="Privacy Policy for Habitly: Habit Tracker on Google Play.">
+    <meta name="theme-color" content="#1f8a84">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f6f2e9;
+            --surface: rgba(255, 253, 248, 0.9);
+            --surface-strong: rgba(255, 255, 255, 0.96);
+            --border: rgba(35, 47, 62, 0.13);
+            --text: #1c2433;
+            --muted: #4e5a6b;
+            --accent: #d7643f;
+            --accent-alt: #1f8a84;
+            --accent-soft: rgba(31, 138, 132, 0.12);
+            --shadow-lg: 0 26px 74px rgba(23, 34, 49, 0.18);
+            --shadow-sm: 0 14px 30px rgba(23, 34, 49, 0.1);
+            --radius-xl: 30px;
+            --radius-lg: 20px;
+            --radius-md: 14px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Sora", "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 6% 0%, rgba(31, 138, 132, 0.22), transparent 24%),
+                radial-gradient(circle at 95% 6%, rgba(215, 100, 63, 0.2), transparent 30%),
+                linear-gradient(180deg, #fef9f1 0%, var(--bg) 100%);
+            padding: 14px;
+        }
+
+        .page-shell {
+            width: min(1140px, 100%);
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .topbar {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            background: var(--surface);
+            backdrop-filter: blur(14px);
+            box-shadow: var(--shadow-sm);
+            padding: 14px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            animation: rise 620ms ease both;
+        }
+
+        .brand {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+
+        .home-link {
+            text-decoration: none;
+            color: #146560;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+        }
+
+        .hero {
+            margin-top: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(249, 244, 235, 0.84));
+            box-shadow: var(--shadow-lg);
+            padding: clamp(22px, 4vw, 40px);
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+            gap: 20px;
+            animation: rise 720ms ease both;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            padding: 7px 12px;
+            border-radius: 999px;
+            font-size: 0.73rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: rgba(31, 138, 132, 0.12);
+            color: #146560;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            line-height: 1.15;
+        }
+
+        h1 {
+            margin-top: 14px;
+            font-family: "Newsreader", Georgia, serif;
+            font-size: clamp(2rem, 4.6vw, 3.3rem);
+            letter-spacing: -0.02em;
+            max-width: 14ch;
+        }
+
+        .hero p {
+            margin: 12px 0 0;
+            color: var(--muted);
+            line-height: 1.72;
+            max-width: 58ch;
+        }
+
+        .meta-grid {
+            display: grid;
+            gap: 10px;
+            align-content: start;
+        }
+
+        .meta-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            background: var(--surface-strong);
+            padding: 12px 14px;
+        }
+
+        .meta-card span {
+            display: block;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+
+        .meta-card strong,
+        .meta-card a {
+            color: var(--text);
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .layout {
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 14px;
+            align-items: start;
+        }
+
+        .toc {
+            position: sticky;
+            top: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            background: var(--surface);
+            box-shadow: var(--shadow-sm);
+            padding: 16px;
+        }
+
+        .toc h2 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            font-family: "Sora", "Segoe UI", sans-serif;
+        }
+
+        .toc a {
+            display: block;
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.86rem;
+            line-height: 1.4;
+            padding: 7px 8px;
+            border-radius: 8px;
+            transition: 180ms ease;
+        }
+
+        .toc a:hover,
+        .toc a:focus-visible {
+            color: var(--text);
+            background: rgba(31, 138, 132, 0.12);
+            outline: none;
+        }
+
+        .article {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            background: var(--surface);
+            box-shadow: var(--shadow-sm);
+            padding: clamp(20px, 3.6vw, 32px);
+        }
+
+        .policy-section + .policy-section {
+            margin-top: 12px;
+        }
+
+        .policy-section {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            background: var(--surface-strong);
+            padding: 16px;
+            scroll-margin-top: 20px;
+        }
+
+        .policy-section h2 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .policy-section p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.72;
+            font-size: 0.95rem;
+        }
+
+        .policy-section p + p {
+            margin-top: 10px;
+        }
+
+        .policy-section a {
+            color: #146560;
+            font-weight: 600;
+        }
+
+        .footer-note {
+            margin-top: 14px;
+            color: var(--muted);
+            font-size: 0.82rem;
+            text-align: center;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 960px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc {
+                position: static;
+            }
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 10px;
+            }
+
+            .topbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .home-link {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero,
+            .article {
+                border-radius: 22px;
+            }
+        }
+
+        /* Visual refresh for a cleaner, more professional look */
+        :root {
+            --bg: #eef2f8;
+            --surface: rgba(255, 255, 255, 0.86);
+            --surface-strong: rgba(255, 255, 255, 0.96);
+            --border: rgba(12, 22, 35, 0.1);
+            --text: #0e1726;
+            --muted: #4f5f75;
+            --accent: #e07a4f;
+            --accent-alt: #0f766e;
+            --accent-soft: rgba(15, 118, 110, 0.14);
+            --shadow-lg: 0 28px 80px rgba(9, 22, 38, 0.17);
+            --shadow-sm: 0 14px 34px rgba(9, 22, 38, 0.1);
+            --radius-xl: 32px;
+            --radius-lg: 22px;
+            --radius-md: 16px;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 7% -2%, rgba(15, 118, 110, 0.2), transparent 34%),
+                radial-gradient(circle at 98% 8%, rgba(224, 122, 79, 0.17), transparent 34%),
+                linear-gradient(180deg, #f8fbff 0%, #edf2f8 100%);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(14, 23, 38, 0.016) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(14, 23, 38, 0.016) 1px, transparent 1px);
+            background-size: 48px 48px;
+            mask-image: radial-gradient(circle at center, black 28%, transparent 92%);
+            z-index: 0;
+        }
+
+        .page-shell {
+            position: relative;
+            z-index: 1;
+        }
+
+        .topbar,
+        .hero,
+        .toc,
+        .article {
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .topbar {
+            position: sticky;
+            top: 10px;
+            z-index: 3;
+        }
+
+        .policy-section {
+            border-color: rgba(12, 22, 35, 0.08);
+            box-shadow: 0 10px 24px rgba(10, 23, 40, 0.06);
+        }
+
+        a:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.22);
+            border-radius: 8px;
+        }
+
+        /* Professional polish layer */
+        body {
+            letter-spacing: 0.01em;
+        }
+
+        .hero {
+            padding: clamp(26px, 4.2vw, 44px);
+        }
+
+        .hero p,
+        .policy-section p {
+            line-height: 1.78;
+        }
+
+        .article {
+            padding: clamp(24px, 4vw, 36px);
+        }
+
+        .policy-section {
+            padding: 18px;
+        }
+
+        .policy-section h2 {
+            margin-bottom: 12px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="./index.html">Codevity Apps</a>
+            <a class="home-link" href="./index.html">Back to home</a>
+        </header>
+
+        <section class="hero">
+            <div>
+                <span class="eyebrow">Google Play Privacy Policy</span>
+                <h1>Habitly Privacy Policy</h1>
+                <p>
+                    This policy describes how Codevity Apps handles information when you use
+                    Habitly: Habit Tracker.
+                </p>
+            </div>
+            <div class="meta-grid" aria-label="Policy metadata">
+                <article class="meta-card">
+                    <span>Effective Date</span>
+                    <strong>June 28, 2026</strong>
+                </article>
+                <article class="meta-card">
+                    <span>Developer</span>
+                    <strong>Codevity Apps</strong>
+                </article>
+                <article class="meta-card">
+                    <span>Contact</span>
+                    <a href="mailto:ajaybcodes@gmail.com">ajaybcodes@gmail.com</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="layout">
+            <aside class="toc" aria-label="Page sections">
+                <h2>On this page</h2>
+                <a href="#information">1. Information We Collect</a>
+                <a href="#usage">2. How We Use Information</a>
+                <a href="#permissions">3. Permissions</a>
+                <a href="#third-party">4. Third-Party Services</a>
+                <a href="#sharing">5. Data Sharing</a>
+                <a href="#retention">6. Data Retention</a>
+                <a href="#children">7. Children Privacy</a>
+                <a href="#rights">8. Your Rights and Choices</a>
+                <a href="#changes">9. Changes to This Policy</a>
+                <a href="#contact">10. Contact Us</a>
+            </aside>
+
+            <article class="article">
+                <section class="policy-section" id="information">
+                    <h2>1. Information We Collect</h2>
+                    <p>
+                        Habitly: Habit Tracker does not collect personal data or usage analytics on developer-controlled servers.
+                    </p>
+                    <p>
+                        <strong>No personal data collection declared:</strong>
+                        Habitly does not collect, store, or transmit personal information, account details, analytics identifiers, or location data to the developer. The app works fully offline and does not require a sign-up or account. All of your habits, streaks, goals, statistics, achievements, and settings are stored locally on your device.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="usage">
+                    <h2>2. How We Use Information</h2>
+                    <p>
+                        Habitly stores the habit data you create &mdash; such as habit names, schedules, completion history, streaks, goals, Life Score, achievements, XP, and chosen themes &mdash; locally on your device solely to provide habit-tracking features, statistics, and reminders within the app. This information is never transmitted to the developer or any third party.
+                    </p>
+                    <p>
+                        We do not use any information for advertising, profiling, or analytics purposes.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="permissions">
+                    <h2>3. Permissions</h2>
+                    <p>
+                        Habitly requests only the permissions necessary to deliver its features on your device:
+                    </p>
+                    <p>
+                        <strong>Notifications</strong> &mdash; Used to send the habit reminders and streak alerts you schedule inside the app. Reminder times are stored locally on your device and are used only to trigger on-device notifications. This permission is optional; Habitly continues to track habits without it.
+                    </p>
+                    <p>
+                        All permissions can be reviewed or revoked at any time from your device's app settings.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="third-party">
+                    <h2>4. Third-Party Services</h2>
+                    <p>
+                        Habitly does not include third-party advertising SDKs, analytics SDKs, or tracking libraries. The app operates fully offline and requires no internet connection to function.
+                    </p>
+                    <p>
+                        Platform providers such as Google Play may process data under their own privacy policies when you download or update the app. Habitly itself does not initiate any network requests.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="sharing">
+                    <h2>5. Data Sharing</h2>
+                    <p>
+                        We do not sell, share, or disclose personal data to third parties because we do not collect personal data on our servers. Your habits, streaks, and progress remain entirely on your device and under your control.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="retention">
+                    <h2>6. Data Retention</h2>
+                    <p>
+                        Habitly stores your habit data locally on your device. This data is retained until you delete individual habits or entries within the app, clear the app's data, or uninstall the app. No data is retained on developer-controlled servers because none is collected.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="children">
+                    <h2>7. Children Privacy</h2>
+                    <p>
+                        Habitly is a general-purpose habit and productivity app and is not directed at children under the age of 13. We do not knowingly collect personal information from children. Because no personal data is collected by the app, there is no specific risk to child privacy beyond normal device use.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="rights">
+                    <h2>8. Your Rights and Choices</h2>
+                    <p>
+                        Because Habitly does not collect personal data on developer servers, there is no account to delete or data profile to request. You can manage or remove all locally stored data (such as habits, streaks, and statistics) directly within the app or by clearing the app's data or uninstalling it.
+                    </p>
+                    <p>
+                        Notification permission can be revoked at any time from your device settings, which will stop habit reminders without affecting your tracked data.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="changes">
+                    <h2>9. Changes to This Policy</h2>
+                    <p>
+                        We may update this Privacy Policy if the app's functionality changes in a way that affects data handling. Any changes will be reflected on this page with a revised effective date. We encourage you to review this policy periodically.
+                    </p>
+                </section>
+
+                <section class="policy-section" id="contact">
+                    <h2>10. Contact Us</h2>
+                    <p>
+                        If you have any questions or concerns about this Privacy Policy or the Habitly app, please contact us at:
+                    </p>
+                    <p>
+                        <strong>Codevity Apps</strong><br>
+                        Email: <a href="mailto:ajaybcodes@gmail.com">ajaybcodes@gmail.com</a>
+                    </p>
+                </section>
+            </article>
+        </section>
+
+        <p class="footer-note">
+            &copy; 2024&ndash;2026 Codevity Apps. All rights reserved.
+        </p>
+    </main>
+</body>
+</html>
