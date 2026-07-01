@@ -7,6 +7,8 @@
     <meta name="description" content="Privacy Policy for Tables 1-20: Listen & Speak on Google Play.">
     <meta name="theme-color" content="#0f766e">
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/icon-512.png">
+    <link rel="apple-touch-icon" href="./images/icon-512.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -231,6 +233,23 @@
             }
         }
 
+        /* Brand logo */
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-logo {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #fff;
+            border: 1px solid var(--border);
+            box-shadow: 0 6px 16px rgba(9, 22, 38, 0.16);
+        }
+
         @media (prefers-reduced-motion: reduce) {
             *,
             *::before,
@@ -245,7 +264,10 @@
 <body>
     <main class="page-shell">
         <header class="topbar">
-            <a class="brand" href="./index.html">Codevity Apps</a>
+            <a class="brand" href="./index.html">
+                <img class="brand-logo" src="./images/icon-512.png" width="512" height="512" alt="Codevity Apps logo">
+                <span>Codevity Apps</span>
+            </a>
             <a class="home-link" href="./index.html">Back to home</a>
         </header>
 
