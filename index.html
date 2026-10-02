@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="./images/icon-512.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #f6f2e9;
@@ -41,7 +41,7 @@
         body {
             margin: 0;
             min-height: 100vh;
-            font-family: "Sora", "Segoe UI", sans-serif;
+            font-family: "Inter", "Segoe UI", system-ui, sans-serif;
             color: var(--text);
             background:
                 radial-gradient(circle at 8% 0%, rgba(31, 138, 132, 0.22), transparent 28%),
@@ -167,10 +167,10 @@
 
         h1 {
             margin-top: 16px;
-            font-family: "Newsreader", Georgia, serif;
+            font-family: "Inter", "Segoe UI", system-ui, sans-serif;
             font-weight: 700;
-            letter-spacing: -0.02em;
-            font-size: clamp(2rem, 4.8vw, 3.7rem);
+            letter-spacing: -0.025em;
+            font-size: clamp(1.9rem, 4.2vw, 3.1rem);
             max-width: none;
         }
 
@@ -267,9 +267,10 @@
 
         h2 {
             margin-top: 12px;
-            font-family: "Newsreader", Georgia, serif;
-            font-size: clamp(1.7rem, 3.8vw, 2.6rem);
-            letter-spacing: -0.015em;
+            font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+            letter-spacing: -0.02em;
         }
 
         .section-head p {
@@ -547,7 +548,7 @@
 
         /* Professional polish layer */
         body {
-            letter-spacing: 0.01em;
+            letter-spacing: 0;
         }
 
         .page-shell {
@@ -692,6 +693,20 @@
             </div>
 
             <div class="card-grid">
+                <article class="app-card">
+                    <span class="app-label">Games</span>
+                    <h3>Ludo Arena: Offline Ludo Game</h3>
+                    <p>Classic Ludo for 2-4 players on one device. Roll the dice, capture rivals, and race home together, even offline.</p>
+                    <div class="chip-row">
+                        <span class="chip">2-4 players</span>
+                        <span class="chip">Offline</span>
+                    </div>
+                    <div class="app-actions">
+                        <a class="action-link store" href="https://play.google.com/store/apps/details?id=com.codevityapps.ludo" target="_blank" rel="noopener noreferrer"><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#34A853" d="M3.2 2.6c-.2.4-.3.9-.3 1.6v15.6c0 .7.1 1.2.3 1.6L14.3 12 3.2 2.6z"/><path fill="#4285F4" d="M17.8 15.5L14.3 12l3.5-3.5 4.2 2.4c1.2.7 1.2 1.9 0 2.6l-4.2 2z"/><path fill="#FBBC04" d="M14.3 12 3.2 21.4c.3.6.9.7 1.8.2l12.8-7.3-3.5-2.3z"/><path fill="#EA4335" d="M14.3 12 17.8 8.5 5 1.2c-.9-.5-1.5-.4-1.8.2L14.3 12z"/></svg>Play Store</a>
+                        <a class="action-link policy" href="./ld-privacy-policy.html">Privacy Policy</a>
+                    </div>
+                </article>
+
                 <article class="app-card">
                     <span class="app-label">Communication</span>
                     <h3>PhoneMate</h3>
